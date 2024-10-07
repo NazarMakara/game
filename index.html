@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Catch the Falling Objects</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: sans-serif;
+      text-align: center;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    #game-container {
+      width: 600px;
+      height: 400px;
+      margin: 50px auto;
+      position: relative;
+      border: 2px solid black;
+      background-color: #fff;
+    }
+
+    #basket {
+      position: absolute;
+      width: 80px;
+      height: 20px;
+      background-color: #007bff;
+      bottom: 20px;
+      left: 260px;
+      border-radius: 10px;
+    }
+
+    .object {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #dc3545;
+      border-radius: 50%;
+    }
+
+    #score {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 20px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="game-container">
+    <div id="basket"></div>
+    <div id="score">Score: 0</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
